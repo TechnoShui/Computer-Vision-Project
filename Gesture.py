@@ -5,7 +5,7 @@ import math
 import time
 import threading
 import numpy as np
-import speech_recognition as sr
+import speech_recognition as osr
  
 # ── Setup ──
 pyautogui.FAILSAFE = False
@@ -135,7 +135,7 @@ def move_cursor(hand):
  
 def detect_asl_letter(hand):
     up = fingers_up(hand)  # [thumb, index, middle, ring, pinky]
-    thumb, index, middle, ring, pinky = up   echo venv/ > .gitignore
+    thumb, index, middle, ring, pinky = up
  
     thumb_index_dist = get_distance(hand[4], hand[8])
  
